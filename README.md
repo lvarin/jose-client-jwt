@@ -1,0 +1,22 @@
+# Jose client server
+
+Simple JWT Jose example.
+
+## Install
+
+```sh
+pip install authlib
+```
+
+## Test
+
+```sh
+$ ./jose-client.py Alvaro
+JWT token:
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiQWx2YXJvIiwiZXhwIjoxNjc0NzM3NzYzLCJvYmplY3QiOiJvYmplY3RvIn0.FXfysVqjYGnPrtZ2vYGpJRh3uDW030Y7yXU9i3d-7kTbXPS8bIG1pSIZ_tIPA4Fk_lHXo0Lgh_5KEEv80DOpnUNMraQJGrciZhydWijbC6vUr4Eehr90qJVKTSJsPBUO_GL2N1mXs5j5qEAsNG5N6e8DIsJJ49RHUtmkFL_6K0AFrBNFqoHmLJf00QA45RzriilPsrzfJHLmzbDPR1tILVF6WyRlSDDMNEM0nsP8Cz5ZGUViP_jkzMLEbDF3UPOcjR5llhSXWBcIgfqec9N6tKhuSWWP-jczFAEx4Kn9dhMSf-wLyjbakaxKGatHSk4-9J4YC-1y_EufQuvsP_lriw
+
+
+```sh
+$ ./jose-server.py eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiQWx2YXJvIiwiZXhwIjoxNjc0NzM3NzYzLCJvYmplY3QiOiJvYmplY3RvIn0.FXfysVqjYGnPrtZ2vYGpJRh3uDW030Y7yXU9i3d-7kTbXPS8bIG1pSIZ_tIPA4Fk_lHXo0Lgh_5KEEv80DOpnUNMraQJGrciZhydWijbC6vUr4Eehr90qJVKTSJsPBUO_GL2N1mXs5j5qEAsNG5N6e8DIsJJ49RHUtmkFL_6K0AFrBNFqoHmLJf00QA45RzriilPsrzfJHLmzbDPR1tILVF6WyRlSDDMNEM0nsP8Cz5ZGUViP_jkzMLEbDF3UPOcjR5llhSXWBcIgfqec9N6tKhuSWWP-jczFAEx4Kn9dhMSf-wLyjbakaxKGatHSk4-9J4YC-1y_EufQuvsP_lriw
+{'user_id': 'Alvaro', 'exp': 1674737763, 'object': 'objecto'}
+```
